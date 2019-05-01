@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../../static/css/styly.css"
+          th:href="${'../css/styly.css'}"/>
+    <link rel="icon" href="../../static/images/favicon.png"
+          th:href="${'../images/favicon.png'}"/>
+    <title>Telefonní seznam</title>
+</head>
+<body>
+
+
+    <div class="page">
+
+        <h1>Telefonní záznam</h1>
+
+        <form method="post">
+            <table>
+                <tr>
+                    <td>Číslo</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Název</td>
+                    <td>
+                        <input name="nazev"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Autor</td>
+                    <td>
+                        <input name="autor"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Datum</td>
+                    <td>
+                        <input name="datum"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Uložit změny" class="button"/>
+                        <a th:href="@{/clanky}" href="index.html" class="button">Zpět</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+
+    </div>
+</body>
+</html>
